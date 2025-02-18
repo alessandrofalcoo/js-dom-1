@@ -10,5 +10,5 @@ function turnOn(btn) {
     }
 }
 
-const turn_on = document.addEventListener('click', turnOn());
+const turn_on = document.addEventListener('click', turnOn(btn));
 

@@ -1,14 +1,20 @@
-function turnOn(btn) {
-    if (btn) {
-        document.getElementById('yellow').style.display = "block";
-        document.getElementById('white').style.display = "none";
+const btn = document.getElementById('myBtn');
 
-    } else {
-        document.getElementById('yellow').style.display = "none";
-        document.getElementById('white').style.display = "block";
-
+let button = 0;
+function turn_On__Off() {
+    if (button == 0) {
+        let yellow = document.getElementById('yellow')
+        yellow.style.display = 'block';
+        let white = document.getElementById('white')
+        white.style.display = 'none';
+        button = 1;
+    } else if (button == 1) {
+        let yellow = document.getElementById('yellow')
+        yellow.style.display = 'none';
+        let white = document.getElementById('white')
+        white.style.display = 'block';
+        button = 0;
     }
 }
 
-const turn_on = document.addEventListener('click', turnOn(btn));
-
+btn.addEventListener('click', turnOn)

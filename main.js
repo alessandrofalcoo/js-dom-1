@@ -1,7 +1,7 @@
 const btn = document.getElementById('myBtn');
 
 let button = 0;
-function turn_On__Off() {
+function turn_On_Off() {
     if (button == 0) {
         let yellow = document.getElementById('yellow')
         yellow.style.display = 'block';
@@ -17,4 +17,4 @@ function turn_On__Off() {
     }
 }
 
-btn.addEventListener('click', turnOn)
+btn.addEventListener('click', turn_On_Off)
